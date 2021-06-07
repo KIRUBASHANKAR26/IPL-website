@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Risers Hyderabad</title>
+    <!-- font-awesome-cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- style-css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <a href="#" id="logo"><img src="/images/sun-risers-logo.svg" alt=""></a>
+        
+            <nav>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="#">TEAM</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+                <div class="add-player">
+                    <label for="add-player"></label>
+                    Add player's
+                    <i id="add-player" class="fas fa-plus"></i>
+                </div>
+                <div class="search">
+                    <input type="text"  id="search-input" class="input" placeholder="Search...">
+                    <button class="btn">
+                      <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <section id="banner">
+            <img src="https://cdn.shopify.com/s/files/1/0301/5131/1495/collections/srh_banner.jpg?v=1617441194" alt="csk-banner">
+        </section>
+        <section id="performance">
+            <div class="column-1">
+                <div>
+                    <h3>CHAMPIONSHIP WON</h3>
+                    <p>2010 2011 2018</p>
+                </div>
+                <div >
+                    <h3>Player's</h3>
+                    <p>24</p>
+                </div>
+            </div>
+          
+            <div id="top-batsman" >
+                <h3>Top Batsman</h3>
+                <div class="player-wrapper">
+                    <img src="https://www.dreamteamcric.com/wp-content/uploads/Ruturaj-Gaikwad.jpg" alt="Ruturaj-Gaikwad">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c170639/faf-du-plessis.jpg" alt="faf du">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c148324/suresh-raina.jpg" alt="raina">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c171012/ambati-rayudu.jpg" alt="rayudu">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c170677/ms-dhoni.jpg" alt="dhoni">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c170953/moeen-ali.jpg" alt="moeen">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c156183/sam-curran.jpg" alt="sam">
+                </div>
+            </div>
+            <div id="top-bowler">
+                <h3>Top bowler</h3>
+                <div class="player-wrapper">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c171033/dwayne-bravo.jpg" alt="bravo">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c170670/ravindra-jadeja.jpg" alt="jadeja">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c170764/imran-tahir.jpg" alt="tahir">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c170761/lungi-ngidi.jpg" alt="ngidi">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c182103/shardul-thakur.jpg" alt="thakur">
+                    <img src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c178782/deepak-chahar.jpg" alt="chahar">
+                </div>
+
+            </div>
+        </section>
+        <h2>Team player's</h2>
+        <section class="team-player">
+            
+            <!-- <div class="player-card">
+                <img src="https://www.dreamteamcric.com/wp-content/uploads/Ruturaj-Gaikwad.jpg" alt="">
+                <div class="player-info">
+                    <p>Name:<span>Ruturaj Gaikwad</span></p>
+                    <p>BirthPlace:<span>Pune Maharashtra</span></p>
+                    <p>Born:<span>Jan 31, 1997 (24 years)</span></p>
+                    <p>Role:<span>Batsman</span></p>
+                    <p>BattingStyle:<span>Right-Batsman</span></p>
+                    <p>bowlingStyle:<span>Right-arm offbreak</span></p>
+                </div>
+            </div> -->
+        </section>
+        <section id="pop-modal" class="pop-modal">
+            
+            <form class="wrapper" id="wrapper">
+                <div class="close" id="close"><i class="fas fa-times"></i></div>
+                Name: <input type="text" name="name" id="player-name" required>
+                Birthplace:<input type="text" name="place" id="player-place" required>
+                Born:<input type="date" name="date" id="player-birth" required>
+                Role:<input type="text" name="role" id="player-role" required>
+                BattingStyle:<input type="text" name="bat-style" id="player-batting-sty" required>
+                BowlingStyle:<input type="text" name="bow-style" id="player-bowling-sty" required>
+                <input type="submit" value="SUBMIT" id="submit">
+            </form>
+        </section>
+    </main>
+   <script src="./script.js"></script>
+</body>
+</html>

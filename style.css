@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #3E58A2;
+    min-height: 100vh;
+}
+h1{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transition: translate(-50%,-50%);
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 1px;
+}
+header{
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem 5rem;
+    height: 100vh;
+    background: url(./images/bg.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    position: relative;
+}
+#logo{
+    display: inline-block;
+    width: 8rem;
+    height: 4rem;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+/* search styles */
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search .input {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.3s ease;
+}
+
+.btn {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 200px;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
+}
+/* end--hidden search */
+
+nav ul li{
+   
+    list-style-type: none;
+    margin-left: 3rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+.card{
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    text-align: center;
+}
+.card-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.add-player{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.add-player i{
+  margin-left:1rem;
+  cursor: pointer;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 30%;
+  background: linear-gradient(#fff,#40648a);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.wrapper input{
+  padding: 1rem;
+  border: none;
+  box-shadow: none;
+  border-radius: 2rem;
+}
+.pop-modal{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-15%,-200%);
+  transition: 0.5s ease;
+}
+.pop-modal.active{
+  transform: translate(-15%,-25%);
+}
+.wrapper .close{
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+#submit{
+  width: 100px;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: none;
+  margin: 1rem auto 0 auto;
+  cursor: pointer;
+}

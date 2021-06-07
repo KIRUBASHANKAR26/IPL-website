@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL20</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <!-- font-awesome-cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- style-css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <header>
+            <a href="#" id="logo"><img src="./images/logo.svg" alt=""></a>
+        
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">TEAM</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+                <div class="add-player">
+                    <label for="add-player"></label>
+                    Add Team
+                    <i id="add-player" class="fas fa-plus"></i>
+                </div>
+                <div class="search">
+                    <input type="text" id="search-input" class="input" placeholder="Search...">
+                    <button class="btn">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+            </nav>
+            <h1>INDIAN PREMIER LEAGUES</h1>
+        </header>
+    
+        <section class="teams">
+            <h2>TEAMS</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <a href="./teams/csk/index.html"><img src="./images/CSK.jpg" alt="CSK"></a>
+                    <p>CHENNAI SUPER KINGS</p>
+                </div>
+                <div class="card">
+                    <a href="./teams/mi/index.html"><img src="./images/MI.jpg" alt="MI"></a>
+                    <p>MUMBAI INDIANS</p>
+                </div>
+                <div class="card">
+                    <a href="./teams/RCB/index.html"><img src="./images/Bangalore.jpg" alt="RCB"></a>
+                    <p>ROYAL CHALLENGES BANGALORE</p>
+                </div>
+                <div class="card">
+                    <a href="./teams/sun risers/index.html"><img src="./images/Sun risers.jpg" alt="SRC"></a>
+                    <p>SUN RISERS</p>
+                </div>
+                <div class="card">
+                    <a href="./teams/punjab/index.html"><img src="./images/punjab.jpg" alt="punjab"></a>
+                    <p>KING XI PUNJAB</p>
+                </div>
+                <div class="card">
+                    <a href="./teams/rr/index.html"><img src="./images/Rajasthan.png" alt="Rajasthan"></a>
+                    <p>RAJASTHAN ROJALS</p>
+                </div>
+                <div class="card">
+                    <a href="./teams/kkr/index.html"><img src="./images/KR.jpg" alt="kolkata"></a>
+                    <p>KOLKATA KNIGHT RIDERS</p>
+                </div>
+                <div class="card">
+                    <a href="./teams/delhi/index.html"><img src="./images/Delhi.jpg" alt="Delhi"></a>
+                    <p>DELHI CAPITALS</p>
+                </div>
+            </div>
+            
+        </section>
+        <section id="pop-modal" class="pop-modal">
+            
+            <form class="wrapper" id="wrapper">
+                <div class="close" id="close"><i class="fas fa-times"></i></div>
+                Team Name: <input type="text" name="name" id="team-name" required>
+                <input type="submit" value="SUBMIT" id="submit">
+            </form>
+        </section>
+    </main>
+
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>
