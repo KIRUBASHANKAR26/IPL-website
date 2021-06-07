@@ -265,7 +265,7 @@ searchInput.addEventListener("keyup", () => {
 
         var parent = nameTags[i].parentElement;
         const textValue = nameTags[i].innerText;
-        parent.classList.add(textValue.toUpperCase().includes(inputValue) ? '' : 'active') ;
+        parent.style.display = textValue.toUpperCase().includes(inputValue) ? '' : 'none' ;
         
     }
 })
