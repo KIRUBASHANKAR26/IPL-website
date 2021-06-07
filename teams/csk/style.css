@@ -221,7 +221,7 @@ nav{
     transition: 0.5s ease;
 }
 .pop-modal.active{
-    transform: translate(-15%,-20%);
+    transform: translate(-15%,-35%);
 }
 .wrapper .close{
     display: flex;
