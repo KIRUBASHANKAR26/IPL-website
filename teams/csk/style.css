@@ -248,3 +248,9 @@ h2{
     margin-left: 10rem;
     color: #fff;
 }
+.player-card.active{
+    display: block;
+}
+.player-card.remove{
+    display: none;
+}
